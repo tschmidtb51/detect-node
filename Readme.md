@@ -1,13 +1,22 @@
+## detect-node
+> This is a fork of `detect-node`.
+
+Differences:
+- uses named export {isNode}
+- has d.ts integrated
+- supports ESM
+
 ### Install
 
 ```shell
-npm install --save detect-node
+npm install --save detect-node-es
 ```
 
 ### Usage:
 
-```js
-var isNode = require('detect-node');
+```diff
+-var isNode = require('detect-node');
++var {isNode} = require('detect-node-es');
 
 if (isNode) {
   console.log("Running under Node.JS");

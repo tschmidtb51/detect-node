@@ -2,12 +2,13 @@
   "name": "detect-node-es",
   "version": "1.0.0",
   "description": "Detect Node.JS (as opposite to browser environment). ESM modification",
-  "main": "es5/index.js",
-  "module": "esm/index.js",
+  "main": "es5/node.js",
+  "module": "esm/node.js",
   "browser": {
     "./es5/node.js": "./es5/browser.js",
     "./esm/node.js": "./esm/browser.js"
   },
+  "types": "es5/node.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
